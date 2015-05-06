@@ -110,6 +110,7 @@ function buildTree(rows) {
 
 }
 
+//生成した木をコンソールに出力
 function printTree(tree, indent) {
     if (indent === null) indent = '';
     if (tree.isEnd) {
@@ -123,6 +124,7 @@ function printTree(tree, indent) {
     }
 }
 
+//決定木描画用のJSONを生成
 function createJSON(tree, attributes) {
     if(tree.isEnd) {
         var object = new Array()

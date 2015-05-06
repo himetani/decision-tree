@@ -1,14 +1,4 @@
-function drawTree(target, data) {
-    // Tree layout
-    var tree = d3.layout.tree().size([1000, 700]).separation(function() { return 1 });
-    // Funciton of creating a link
-    var diagonal = d3.svg.diagonal();
-}
-
-function children(d) {
-    return d["children"];
-}
-
+//生成した描画用のJSONデータをコピペ
 var data = {
     "name": "petalLength <= 2.45",
     "children": [
@@ -41,6 +31,17 @@ var data = {
             ]
         }
     ]
+}
+
+function drawTree(target, data) {
+    // Tree layout
+    var tree = d3.layout.tree().size([1000, 700]).separation(function() { return 1 });
+    // Funciton of creating a link
+    var diagonal = d3.svg.diagonal();
+}
+
+function children(d) {
+    return d["children"];
 }
 
 var width = 1000;
