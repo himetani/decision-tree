@@ -1,1 +1,29 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="https://code.jquery.com/jquery-git2.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <style>
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+            .axis text {
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Decision Tree</h1>
+            </div>
+            <div id="tree"></div>
+        </div>
+        <script type="text/javascript" src="./js/draw-tree.js"></script>
+    </body>
+</html>
